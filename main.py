@@ -3,7 +3,7 @@ import streamlit as st
 import sqlite3 as lite
 import pandas as pd
 from st_aggrid import AgGrid
-from st_aggrid.grid_options_builder import GridOptionsBuilder
+
 
 
 
@@ -72,7 +72,7 @@ if Selecao == "MEMBROS":
         try:
             dt = pd.read_sql_query("SELECT * FROM Cadastro",conn)
             df2 = pd.DataFrame(dt, columns=['NOME', 'APELIDO', 'RESIDENCIA', 'IDADE', 'CONTACTO', 'ESTATUS', 'ESTADO', 'POSIÇAO'])
-            st.write(df2)
+            st.table(df2)
             st.info(f"Já foram Cadastrados até já, {len(df2)} Membros")
         except:
             pass
