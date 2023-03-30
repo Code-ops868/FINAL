@@ -72,7 +72,7 @@ if Selecao == "MEMBROS":
         try:
             dt = pd.read_sql_query("SELECT * FROM Cadastro",conn)
             df2 = pd.DataFrame(dt, columns=['NOME', 'APELIDO', 'RESIDENCIA', 'IDADE', 'CONTACTO', 'ESTATUS', 'ESTADO', 'POSIÇAO'])
-            AgGrid(df2)
+            st.write(df2)
             st.info(f"Já foram Cadastrados até já, {len(df2)} Membros")
         except:
             pass
