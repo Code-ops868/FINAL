@@ -11,12 +11,13 @@ conn = lite.connect('banco.db')
 cur = conn.cursor()
 cur.execute(''' CREATE TABLE IF NOT EXISTS Cadastro(NOME text, APELIDO TEXT, RESIDENCIA TEXT, IDADE INT, CONTACTO TEXT, ESTATUS TEXT, ESTADO CÍVIL TEXT, POSIÇAO TEXT)''')
 st.set_page_config(page_title="IGREJA WESLEYANA-NAMPULA")
-with st.sidebar:
-    Selecao=st.selectbox(['MENU','INICIO','CADASTRO','MEMBROS','CONTACTO']
+#with st.sidebar:
+Selecao = st.sidebar.selectbox(
+    "MENU",
+    ["INÍCIO","CADASTRO","MEMBROS","CONTACTO"],
    
-   
-        )
-        
+)
+
 
 if Selecao=="INÍCIO":
     st.header(body=":orange[BEM-VINDO - WELL-COME]")
