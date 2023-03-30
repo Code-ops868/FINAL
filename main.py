@@ -84,8 +84,8 @@ if Selecao == "MEMBROS":
 
 if Selecao=="CONTACTO":
         st.header(body="Envie-nos uma Mensagem")
-        foto = "Imagem.PNG"
-        st.image(foto)
+        #foto = "Imagem.PNG"
+        #st.image(foto)
         Emial = ''' 
         <form action="https://formsubmit.co/apoiocodeminde@gmail.com" method="POST">
             <input type="hidden" name="_captcha" value="false">
