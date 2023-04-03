@@ -67,7 +67,7 @@ if   Selecao == "CADASTRO":
             #Resultado = Dados.fetchall()
             #conn.close()
             
-    Formulario()
+    Formulario(Nome, Apelido, Residencia, Idade, Contacto, Estado, Estado2, Posicao)
 if Selecao == "MEMBROS":
         try:
             dt = pd.read_sql_query("SELECT * FROM Cadastro",conn)
