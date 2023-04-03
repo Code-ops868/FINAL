@@ -21,7 +21,8 @@ Selecao = st.sidebar.selectbox(
 
 
 if Selecao=="INÍCIO":
-    st.header(body=":orange[BEM-VINDO - WELL-COME]")
+    st.header(body=":orange[IGREJA EMMANUEL EVANGÉLICA WESLEYANA DE NAMPULA]")
+    st.header(body=":orange[SEJA BEM-VINDO - WELL-COME]")
                 
                 
     st.subheader(body=":red[SALMOS 87:6]")
